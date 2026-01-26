@@ -18,6 +18,10 @@ public class User implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	// Construtor padrão (vazio) exigido pelo Hibernate
+	public User() {
+	}
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
